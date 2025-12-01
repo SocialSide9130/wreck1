@@ -9,7 +9,7 @@ services:
     
     # ホストのファイルをコンテナ内で編集したい場合のマウント設定
     volumes:
-      - ./app:/app
+      - ./src:/src
     
     # コンテナログイン時の初期ディレクトリ
-    working_dir: /app
+    working_dir: /src
