@@ -1,0 +1,15 @@
+services:
+  app:
+    # カレントディレクトリのDockerfileを使ってビルド
+    build: .
+    
+    # シェルを起動し続けるための設定（これがないとすぐ終了します）
+    tty: true
+    stdin_open: true
+    
+    # ホストのファイルをコンテナ内で編集したい場合のマウント設定
+    volumes:
+      - ./app:/app
+    
+    # コンテナログイン時の初期ディレクトリ
+    working_dir: /app

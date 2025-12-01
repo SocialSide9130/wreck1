@@ -1,0 +1,5 @@
+module Main;
+
+main : IO () = (
+    "Hello World!".println
+);
